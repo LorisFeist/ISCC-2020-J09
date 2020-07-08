@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 $login = $_POST['Login'];
 $mdp = $_POST['Password'];
 
-setcookie("cookie", $_SESSION['id'], time();
+setcookie("cookie", $_SESSION['id'], time()+4600);
 
 if(empty($login) and empty($mdp))
     {
